@@ -1,0 +1,544 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="{% static 'portfolio/portfolio1.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'portfolio/stylePortfolio.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'portfolio/mainPortfolio.css' %}">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        #ahsan-button {
+            cursor: pointer;
+            width: 100%;
+            color: rgb(55, 61, 71);
+            background-color: white;
+            border: none;
+            padding: 0.8rem;
+            outline: none;
+            font-family: 'Quicksand';
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        #ahsan-form {
+            display: none;
+        }
+
+        .gradient1 { background: linear-gradient(30deg,  #799F0C, #FFE000); }
+        .gradient2 { background: linear-gradient(30deg,  #C6FFDD, #FBD786, #f7797d); }
+        .gradient3 { background: linear-gradient(30deg, rgba(233,240,104,1) 0%, rgba(70,252,146,1) 100%); }
+
+        .instagram { background: radial-gradient(circle at 0% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF); }
+
+        .lightBlue { background-color: rgb(230, 249, 255); }
+    </style>
+
+</head>
+<body class="bg-dark">
+
+    <div class="wrapper">
+        <!-- loginForm -->
+        <div class="box-content">
+            <div class="container-fluid p-0">
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <button id="siyam-button">Pulkit Gupta</button>
+                    </div>
+                </div>
+            </div>
+
+<!--------------------------------------------------------Pulkit Start----------------------------------------------------------->
+            <div class="container-fluid p-0">
+                <form id="siyam-form">
+                    <section class="showcase">
+                        <div class="container">
+                            <div class="content-heading">
+                                <h1 class="text-capitalize">I am
+                                <span class="siyam" style="color: #2ecc71"></span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="skewed-top"></div>
+                    </section>
+
+                    <!----About Me Section---->
+                    <section class="sec1 about">
+                        <div class="container text-white mt-5">
+                            <div class="row pt-4">
+                                <div class="col-xs-12 col-md-7 pt-0 padding">
+                                    <div class="photo"><img src="/static/images/pullu.jpg" class="img" alt="siyam"></div>
+                                </div>
+                                <div class="col-xs-12 col-md-5">
+                                    <div class="">
+                                        <h4 style="color: #2ecc71">About Me</h4>
+                                        <p>
+                                            pulkitgupta299@gmail.com<br>https://www.linkedin.com/in/pulkit-gupta-59040517b/<br>http://www.digitechbits.com/<br>
+                                            https://www.facebook.com/pulkit2909<br>https://codinghorrorfacts.blogspot.com/<br>9149050710 <hr>
+                                        </p>
+                                        <h5 class="display-6" style="color: orangered">Python (Django) Developer | Team Leader | Presenter | Tech Enthusiast</h5>
+                                        <p class="pt-4">A person who thinks outside the box and likes to communicate with people. I want to build my career as a <span style="color: #2ecc71">Software Engineer</span>.
+
+                                        <br><br>
+
+                                        Now I'm working on Python's <span style="color: #2ecc71">Django web framework</span>. This 'Blog & Portfolio' site is an <span style="color: #2ecc71">Open Source</span> project and <span style="color: #2ecc71">BackEnd</span> is develop with <span style="color: #2ecc71">Django</span>. We have a small <span style="color: #2ecc71">Team</span> of Four people named <span style="color: #2ecc71">Digitechbits</span>. <span style="color: #2ecc71">I'm</span> Python and Django developer, <span style="color: #2ecc71">Akanksha</span> is front-end designer and developer, <span style="color: #2ecc71">Amrendra</span> is also a Django developer, <span style="color: #2ecc71">Sameer</span> is  a Anderoid developer.
+
+                                        <br><br>
+
+                                        I did the <span style="color: #2ecc71">Main Planning</span> and <span style="color: #2ecc71">Backend Structure</span> of this <span style="color: #2ecc71">Project</span>. Then Akanksha completed the <span style="color: #2ecc71">Frontend</span>, and Amrendra and Sameer <span style="color: #2ecc71">Updated</span> the whole <span style="color: #2ecc71">Project</span>. The project is finished in a <span style="color: #2ecc71">Splendid Teamwork</span>. But there are still plenty of work left and we are <span style="color: #2ecc71">Trying</span> to do it slowly through <span style="color: #2ecc71">Learning</span>. Our <span style="color: #2ecc71">Team</span> usually works like this. We are <span style="color: #2ecc71">Interested</span> in further projects in the <span style="color: #2ecc71">Future</span>.
+                                        </p>
+                        
+                                        <a href="{% static 'portfolio/resume/CV-Abdullah Al Galib.pdf' %}" class="btn btn-outline-success text-center mt-4 mb-4" style="width: 100%" download>Download CV</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!----About Me Section END---->
+
+                    <!----Experience Section---->
+                    <section class="sec2 experience">
+                        <div class="skewed-top"></div>
+                        <div class="container">
+                            <h1>Experiences</h1>
+
+                            <div class="experience-content">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <h5>Digitechbits</h5>
+                                        <p>April 2020 - Present<br>
+                                        UP, India</p>
+
+                                        <h6>Python-Django Developer (Trainee)</h6>
+                                        <p>We have developed a Django powered, open source web-based software which will launch soon. It's a local freelancing platform application and in the testing stage now. Also, our team is working to develop some other software as well.
+                                            <br><br><b>Key Responsibilities:</b><br>- Coding.<br>- Teamwork.<br>- Completing tasks.<br>- Version controlling.<br>- Agile methodologies.</p>
+                    
+                                    
+                                    <!-- <div class="col-xs-12 col-md-6">    insert more experience inside this div    </div> -->
+                                </div>
+                            </div>
+                            <hr>
+                            <hr>
+                            <div class="experience-content">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <h5> Info </h5>
+                                        <p>April 2020 - Present (On Going)<br>
+                                        UP,India</p>
+
+                                        <h6>Digitechbits (Part-time)</h6>
+                                        <p>Digitechbits is a technology-related  based platform. Our work area is an explanation of innovative technologies, basic functionalities & promoting the IT products.
+                                            <br><br><b>Key Responsibilities:</b><br>- Teamwork.<br>- Presentation.<br>- Digital & social marketing.<br>- Public & Business Connections.</p>
+                                    </div>
+            
+
+                                  <!-- <div class="col-xs-12 col-md-6">    insert more experience inside this div    </div> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!----Experience Section End---->
+
+                    <!----My Works Image Section---->
+                    <section class="sec1 myWork text-white text-center">
+                        <div class="container">
+                            <h1 class="text-center pb-4">Projects & Activities</h1>
+                            <div class="row">
+                                 <div class="col-xs-12 col-sm-6  col-md-4 mb-4">
+                                    <a href="https://drive.google.com/drive/folders/1fJuDEttoJLjThunUCl4FcTERcJX6wbu7?usp=sharing" target="_blank" class="">
+                                    <div class="thumbnails">
+                                        <img src="{% static 'images/TextUtils.jpg' %}" alt="" width="100%">
+                                        <div class="overlay">
+                                        <div class="content">TextUtils</div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6  col-md-4 mb-4">
+                                    <a href="https://drive.google.com/drive/folders/1g0D7AJmc0Ua2D9NsSYzQPvQKfqmPzLqm?usp=sharing" target="_blank" class="">
+                                    <div class="thumbnails">
+                                        <img src="/static/images/space.jpg" alt="" width="100%">
+                                        <div class="overlay">
+                                            <div class="content">Space Game Using Python</div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6  col-md-4 mb-4">
+                                    <a href="#" target="_blank" class="">
+                                    <div class="thumbnails">
+                                        <img src="{% static 'images/tictactoe.png' %}" alt="" width="100%">
+                                        <div class="overlay">
+                                        <div class="content">TicTacToe</div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                               
+                                </div>
+                                <div class="col-xs-12 col-sm-6  col-md-4 mb-4">
+                                    <a href="http://www.digitechbits.com/" target="_blank" class="">
+                                    <div class="thumbnails">
+                                        <img src="{% static 'images/digitechbits.jpg' %}" alt="" width="100%">
+                                        <div class="overlay">
+                                        <div class="content">Digitechbits(Website)</div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </section>
+                    <!---- My Works Image Section END ---->
+
+                    <!---- My Skills ---->
+                    <section class="sec1 skills text-white pb-5">
+                        <div class="container">
+                            <h1>Skills</h1>
+
+                            <div class="skill-content">
+                                <h4>Industry Knowledge</h4> <hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Software Development</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Web Applications</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Agile Methodologies</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">User Experience</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">User Interface</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Digital Marketing</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Event Planning</h6></div>
+                                </div><br>
+
+                                <h4>Tools & Technologies</h4> <hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Python</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Django</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">SQL</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Git</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">sqlite3</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">pygame</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">C (Basic)</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Java </h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">HTML</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">CSS</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">wordpress</h6></div>
+                            
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Microsoft Office</h6></div>
+                                    
+                                </div><br>
+
+                                <h4>Interpersonal Skills</h4> <hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Management</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Teamwork</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Leadership</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Presentation</h6></div>
+                                </div><br>
+
+                                <h4>Other Skills</h4> <hr>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">000Webhost</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Heroku</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">Virtual Environment</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">ngrok</h6></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-3 pb-3"><h6 class="outline p-2">nettify</h6></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!---- My Skills END ---->
+
+                    <!---- Accomplishment ---->
+                    <section class="sec2 accomplishment">
+                        <div class="container">
+                            <div class="skewed-top"></div>
+                            <h1>Accomplishments</h1>
+
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="container p-0">
+                                            <h4>Certifications</h4> <hr>
+
+                                            <h6>Microsoft Technology Associate for Security Fundamentals - Microsoft</h6>
+                                            <p>April 2020 </p>
+                                            <p><a href="https://drive.google.com/file/d/1Wf2RdMrbW3GQDGdbeFjiqB-Qm3EW9xsQ/view?usp=sharing" target="_blank" style="color: orangered">
+                                                <b>See Certificate</b>
+                                            </a></p>
+                                            <hr>
+
+                                            <h6>Licensed Undergraduate & Masters Virtual Internship Platform -Microsoft (</h6>
+                                            <p>June 2020 </p>
+                                            <p><a href="https://drive.google.com/file/d/1E3xpFyW7QuFg5nsUh34hFIwOKK1nRiZr/view?usp=sharing" target="_blank" style="color: orangered">
+                                                <b>See Certificate</b>
+                                            </a></p>
+                                            <hr>
+
+                                        
+
+                                            <h6>Licensed Technology Consulting Virtual Internship -Deloitte (</h6>
+                                            <p>May 2020 </p>
+                                            <p><a href="https://drive.google.com/file/d/1zcCFp6muSXUvHV_g6W46KsiugowiEyxL/view?usp=sharing" target="_blank" style="color: orangered">
+                                                <b>See Certificate</b>
+                                            </a></p>
+                                            <hr>
+
+                                            <h6>Hacker Rank-Java skills </h6>
+                                            <p>June 2020 </p>
+                                            <p><a href="https://drive.google.com/file/d/1QxY--5d6eu1JUX89-1nIgcsd7FCkc6DV/view?usp=sharing" target="_blank" style="color: orangered">
+                                                <b>See Certificate</b>
+                                            </a></p>
+                                            <hr>
+
+                                            <h6>Career Edge Knockdown the Lockdown TCSiON </h6>
+                                            <p>June 2020 </p>
+                                            <p><a href="https://drive.google.com/file/d/1iQxXuOhVc_p1RoDaB3SJR8N5QRriQWr-/view?usp=sharing" target="_blank" style="color: orangered">
+                                                <b>See Certificate</b>
+                                            </a></p>
+                                            <hr>
+
+                                            <h6>Data Analysis With Python - IBM </h6>
+                                            <p>June 2020 </p>
+                                            <p><a href="https://drive.google.com/file/d/1vf75QuxGMyh6ZaqqlMyD--S-5QDzZvgW/view?usp=sharing" target="_blank" style="color: orangered">
+                                                <b>See Certificate</b>
+                                            </a></p>
+                                            <hr>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container p-0">
+                                            <h4>Courses</h4> <hr>
+
+                                            <h6>Sql (online learning & Training Center)</h6>
+                                            <hr>
+                                            <h6>Web Development  (Online  from CWH)</h6>
+                                            <hr>
+                                            <h6>Python OOP and Django Web Framework (Online from Edureka )</h6>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container p-0">
+                                            <h4>Projects</h4> <hr>
+
+                                            <h6>Mini Aircraft Space Game Using PYgame</h6>
+                                            <p>04/2020 – 05/2020</p>
+                                            <p><b>
+                                                Extreme aircraft simulation game is simple, but interesting! You need to kill off the
+                                                enemy high skies while maintaining thrust
+                                            </b></p>
+                                
+                                            <p><a href="https://drive.google.com/drive/folders/1g0D7AJmc0Ua2D9NsSYzQPvQKfqmPzLqm?usp=sharing" style="color: orangered">
+                                                <b>Google Drive</b>
+                                            </a></p>
+                                            <hr>
+
+                                            <h6>Portfolio and Blog Publications Site (Python-Django, JavaScript)</h6>
+                                            <p>April 2020 </p>
+                                            <p><b>
+                                                A Django powered open source web application for publishing articles, videos and manages the personal portfolio.
+                                                and in the debugging stage now. This project is maintaining by our team named 'Digitechbits'.
+                                                I and my team member's portfolio added to this project.
+                                            </b></p>
+                                
+                                            <hr>
+
+                                            <h6>MyE-commerce (Python-Django, Django Rest API)</h6>
+                                            <p>April 2020 – Present</p>
+                                            <p><b>
+                                                A Django powered, open source web-based Ecommerce site which include admin panel ,manage registration,transction modules.
+                                            </b></p>
+                                            <p><a href="https://drive.google.com/drive/folders/1RJusHKoNAvu4nfqUlEq-dNmX-UeNbzTZ?usp=sharing" style="color: orangered">
+                                                <b>Drive</b>
+                                            </a></p>
+                                            <hr>
+
+                                            <h6>TextUtils</h6>
+                                            <p><b>
+                                                In TextUtils ,A Text Analyzer is a simple to use text analyzing tool for counting words, characters, sentences, and paragraphs in your text that you can type, paste ...
+                                            </b></p>
+                                        
+
+                                            <p><a href="#" style="color: orangered">
+                                                <b>Google Drive</b>
+                                            </a></p>
+                                            <hr>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container p-0">
+                                            
+                                            
+                                            <h4>Languages</h4><hr>
+
+                                            <h6> English,Hindi</h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                    <!---- Accomplishment END ---->
+
+                    <!---- Educations ---->
+                    <section class="sec1 educations text-white">
+                        <div class="container">
+                            <h1 class="">Educations</h1>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <h5>Maharana Pratap Engineering College</h5> <hr>
+                                    <p>Mandhana,Kanpur</p>
+                                    <h6>Bachelor of Technology in  Computer Science & Engineering</h6>
+                                    <p>2017 - 2020 </p>
+                                    <p>Activities and Societies:Encountro Program</p>
+                                    <hr>
+                                </div>
+                        
+                                <div class="col-xs-12 col-md-6">
+                                    <h5>Gandhi Nagar Public School, Moradabad</h5> <hr>
+                                    <h6>SSC, Science, CGPA 9.00</h6>
+                                    <p>Activities and Societies: Sports</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!---- Educations END---->
+
+                    <!---- Contact ---->
+                    <section class="sec2 contact text-center">
+                        <div class="skewed-top"></div>
+                        <div class="container">
+                            <marquee behavior="alternate" width="50%" style="background-color: black; color: orangered">
+                                <b>This section is under construction. Contact information is provided above.</b>
+                            </marquee>
+                            <h1 class="text-center">Contact</h1>
+                            <h6 class="text-center pb-3">GET IN TOUCH </h6>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4">
+                                <div class="form">
+                                    <input type="text" class="form-control mb-3" placeholder="name">
+                                </div>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                <div class="form">
+                                    <input type="email" class="form-control mb-3" placeholder="email">
+                                </div>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                <div class="form">
+                                    <input type="text" class="form-control" placeholder="subject">
+                                </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12 pt-2">
+                                <div class="form">
+                                    <textarea type="text" class="form-control" placeholder="message" rows="4" cols="50"></textarea>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-dark" type="submit">Send Message</button>
+{#                            <h6 class="pt-3 text-center">pulkitgupta299@gmail.com</h6>#}
+{#                            <h6 class="pt-3 text-center">9149050710</h6>#}
+                        </div>
+                    </section>
+                    <!---- Contact END---->
+
+                    <!---- Footer Follow Me ---->
+                    <section class="footer">
+                        <p class="text-white text-center pt-4 pb-1"> Follow Me </p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/pulkit2909" target="_blank"><i class="fab fa-facebook-f facebook"></i></a></li>
+                            <li><a href="https://github.com/P29091999" target="_blank"><i class="fab fa-github bg-dark"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/pulkit-gupta-59040517b/" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a></li>
+                        </ul> <hr>
+                    </section>
+                    <!---- Footer Follow Me END---->
+
+                </form>
+
+               
+
+
+    <!-- Javascript -->
+    <script>
+        init();
+
+        function init() {
+            $("#siyam-button").css("border-bottom", "3px solid black");
+            $("#siyam-form").css("display", "block");
+        }
+
+        $("#siyam-button").on("click", function() {
+            $(this).css("border-bottom", "3px solid black");
+
+            $("#joy-button").css("border-bottom", "3px solid white");
+            $("#ahsan-button").css("border-bottom", "3px solid white");
+            
+            $("#joy-form").css("display", "none");
+            $("#ahsan-form").css("display", "none");
+            
+            $("#siyam-form").slideDown(500, function() {
+                $(this).css("display", "block");
+            });
+        });
+
+        $("#joy-button").on("click", function() {
+            $(this).css("border-bottom", "3px solid black");
+
+            $("#siyam-button").css("border-bottom", "3px solid white");
+            $("#ahsan-button").css("border-bottom", "3px solid white");
+
+            $("#siyam-form").css("display", "none");
+            $("#ahsan-form").css("display", "none")
+
+            $("#joy-form").slideDown(500, function() {
+                $(this).css("display", "block");
+            });
+        });
+        
+
+        $("#ahsan-button").on("click", function() {
+            $(this).css("border-bottom", "3px solid black");
+
+            $("#siyam-button").css("border-bottom", "3px solid white");
+            $("#joy-button").css("border-bottom", "3px solid white");
+
+            $("#siyam-form").css("display", "none");
+            $("#joy-form").css("display", "none")
+
+            $("#ahsan-form").slideDown(500, function() {
+                $(this).css("display", "block");
+            });
+        });
+    </script>
+    <script src="static/script/animation.js"></script>
+    <!-- typed.js text animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script type="text/javascript">
+        var typed = new Typed(".siyam", {
+        strings: ["Pulkit Gupta", "Python Developer"],
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 1000,
+        });
+    </script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
